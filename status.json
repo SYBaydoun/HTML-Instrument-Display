@@ -1,0 +1,12 @@
+{
+    "orientation": [
+        [1, 0, 0],
+        [0, 0, 1],
+        [0, 0, 1]
+    ],
+    "rotation_dot": {
+        "pitch_dot": 0,
+        "roll_dot": 10,
+        "yaw_dot": 0
+    }
+}

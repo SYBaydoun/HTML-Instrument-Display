@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI Rakete</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="uiTest.css">
+    <script src="uiTest.js" defer></script>
+
+</head>
+<body class="body">
+    <div id="controls">
+    <button id="pitchPlus">Pitch +</button>
+    <button id="pitchMinus">Pitch -</button>
+
+    <button id="rollPlus">Roll +</button>
+    <button id="rollMinus">Roll -</button>
+
+    <button id="yawPlus">Yaw +</button>
+    <button id="yawMinus">Yaw -</button>
+    </div>
+    <div id="canvasGroup">
+        <div id="navballContainer">
+            <canvas id="navballBackground" width="300" height="300"></canvas>
+            <canvas id="navball" width="300" height="300"></canvas>
+        </div>
+        <canvas id="rpyCanvas" width="220" height="300"></canvas>
+        <canvas id="rDotCanvas" width="220" height="300"></canvas>
+        <canvas id="pDotCanvas" width="220" height="300"></canvas>
+        <canvas id="yDotCanvas" width="220" height="300"></canvas>
+        
+    </div>
+    <img src="https://wallpaperaccess.com/full/722554.jpg" id="flat_map">
+
+</body>
+</html>

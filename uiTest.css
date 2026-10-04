@@ -1,0 +1,108 @@
+.body {
+    align-items: center;
+    background: linear-gradient(45deg, #b300ff, #0015ff);
+    color: #d9e0e7;
+    display: flex;
+    flex-direction: column;
+    font-family: Georgia, serif;
+    gap: 18px;
+    justify-content: center;
+    margin: 0;
+    min-height: 100vh;
+}
+
+#controls {
+    display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(2, 120px);
+    width: 260px;
+}
+
+button {
+    background: #151a20;
+    border: 1px solid #53606d;
+    border-radius: 3px;
+    color: #d9e0e7;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 15px;
+    padding: 9px 10px;
+}
+
+button:hover,
+button:focus-visible {
+    background: #29333d;
+    border-color: #b4c2cf;
+    outline: none;
+}
+
+#canvasGroup {
+    height: min(70vw, 380px);
+    max-height: 380px;
+    position: relative;
+    width: min(70vw, 380px);
+}
+
+#navballContainer {
+	height: 100%;
+	position: absolute;
+	width: 100%;
+}
+
+#navball,
+#navballBackground {
+    border-radius: 50%;
+    display: block;
+    height: 100%;
+    inset: 0;
+    position: absolute;
+    width: 100%;
+}
+
+#navballBackground {
+    background: transparent;
+    pointer-events: none;
+}
+
+#navball {
+    background: transparent;
+}
+
+#rpyCanvas, 
+#rDotCanvas, 
+#pDotCanvas, 
+#yDotCanvas {
+    background: transparent;
+    height: 100%;
+    pointer-events: none;
+    position: absolute;
+    right: 100%;
+    top: 0;
+    width: 220px;
+}
+
+#rDotCanvas {
+    left: 0;
+    right: auto;
+    top: -20px;
+    height: calc(100% + 20px);
+    width: 100%;
+}
+
+#pDotCanvas {
+    left: 0;
+    right: auto;
+    width: calc(100% + 20px);
+}
+
+#yDotCanvas {
+    left: 0;
+    right: auto;
+    width: 100%;
+    height: calc(100% + 20px);
+}
+
+#flat_map {
+    height: 10%;
+    width: 10%;
+}
